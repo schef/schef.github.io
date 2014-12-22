@@ -4,13 +4,39 @@
  <title>Schef</title>
  <link href="http://schef.github.io/atom.xml" rel="self"/>
  <link href="http://schef.github.io/"/>
- <updated>2014-12-21T15:45:19+01:00</updated>
+ <updated>2014-12-22T11:44:30+01:00</updated>
  <id>http://schef.github.io</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Masterclass 2</title>
+   <link href="http://schef.github.io/2014/12/22/masterclass-2/"/>
+   <updated>2014-12-22T00:00:00+01:00</updated>
+   <id>http://schef.github.io/2014/12/22/masterclass-2</id>
+   <content type="html">&lt;p&gt;I&amp;#39;m an Double bass player. Now I remembered that I couldn&amp;#39;t decide on which instrument to practice the exercises. He says that they should be on your live own instrument but on the other hand that people with no musical experience can both learn perfect pitch. I&amp;#39;m a &lt;code&gt;python&lt;/code&gt; programming hobbyist and I will try to write all the practices. &lt;/p&gt;
+
+&lt;h3&gt;Keywords&lt;/h3&gt;
+
+&lt;p&gt;Relative and perfect pitch are both important.
+Relative pitch help us to say that the chord is &lt;em&gt;dominant:9&lt;/em&gt; and perfect pitch is helping us to hear that it is on tone &lt;strong&gt;d&lt;/strong&gt;.
+Absolute means non changing. &lt;strong&gt;A&lt;/strong&gt; has always the same sound. It is absolute.&lt;/p&gt;
+
+&lt;p&gt;Different levels:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;color awareness&lt;/li&gt;
+&lt;li&gt;color discrimination (12 chromatic pitch colors) - quality of sound&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Exercise&lt;/h3&gt;
+
+&lt;p&gt;Go to your own instrument and have a listen, here for yourself that this color sounds do exist.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Masterclass 1</title>
@@ -53,10 +79,71 @@ Its something which is already in our ear.&lt;/p&gt;
  </entry>
  
  <entry>
+   <title>What's Jekyll?</title>
+   <link href="http://schef.github.io/1996/01/02/whats-jekyll/"/>
+   <updated>1996-01-02T00:00:00+01:00</updated>
+   <id>http://schef.github.io/1996/01/02/whats-jekyll</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It&amp;#39;s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
+
+&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introducing Hyde</title>
+   <link href="http://schef.github.io/1996/01/01/introducing-hyde.md01-01-1996-introducing-hyde/"/>
+   <updated>1996-01-01T00:00:00+01:00</updated>
+   <id>http://schef.github.io/1996/01/01/introducing-hyde.md01-01-1996-introducing-hyde</id>
+   <content type="html">&lt;p&gt;Hyde is a bazen two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that pairs a prominent sidebar with uncomplicated content. It&amp;#39;s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+
+&lt;h3&gt;Built on Poole&lt;/h3&gt;
+
+&lt;p&gt;Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;. Poole, and every theme built on it (like Hyde here) includes the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Mobile friendly design and development&lt;/li&gt;
+&lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
+&lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
+&lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
+&lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Hyde features&lt;/h3&gt;
+
+&lt;p&gt;In addition to the features of Poole, Hyde adds the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Sidebar includes support for textual modules and a dynamically generated navigation with active link support&lt;/li&gt;
+&lt;li&gt;Two orientations for content and sidebar, default (left sidebar) and &lt;a href=&quot;https://github.com/poole/lanyon#reverse-layout&quot;&gt;reverse&lt;/a&gt; (right sidebar), available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/poole/hyde#themes&quot;&gt;Eight optional color schemes&lt;/a&gt;, available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/poole/hyde#readme&quot;&gt;Head to the readme&lt;/a&gt; to learn more.&lt;/p&gt;
+
+&lt;h3&gt;Browser support&lt;/h3&gt;
+
+&lt;p&gt;Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
+
+&lt;h3&gt;Download&lt;/h3&gt;
+
+&lt;p&gt;Hyde is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Example content</title>
-   <link href="http://schef.github.io/2014/12/19/example-content/"/>
-   <updated>2014-12-19T00:00:00+01:00</updated>
-   <id>http://schef.github.io/2014/12/19/example-content</id>
+   <link href="http://schef.github.io/1966/01/03/example-content/"/>
+   <updated>1966-01-03T00:00:00+01:00</updated>
+   <id>http://schef.github.io/1966/01/03/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
@@ -195,67 +282,6 @@ Its something which is already in our ear.&lt;/p&gt;
 &lt;hr&gt;
 
 &lt;p&gt;Want to see something else added? &lt;a href=&quot;https://github.com/poole/poole/issues/new&quot;&gt;Open an issue.&lt;/a&gt;&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Introducing Hyde</title>
-   <link href="http://schef.github.io/2014/12/17/introducing-hyde/"/>
-   <updated>2014-12-17T00:00:00+01:00</updated>
-   <id>http://schef.github.io/2014/12/17/introducing-hyde</id>
-   <content type="html">&lt;p&gt;Hyde is a bazen two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that pairs a prominent sidebar with uncomplicated content. It&amp;#39;s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
-
-&lt;h3&gt;Built on Poole&lt;/h3&gt;
-
-&lt;p&gt;Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;. Poole, and every theme built on it (like Hyde here) includes the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/atom.xml&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Mobile friendly design and development&lt;/li&gt;
-&lt;li&gt;Easily scalable text and component sizing with &lt;code&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
-&lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
-&lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
-&lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Hyde features&lt;/h3&gt;
-
-&lt;p&gt;In addition to the features of Poole, Hyde adds the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sidebar includes support for textual modules and a dynamically generated navigation with active link support&lt;/li&gt;
-&lt;li&gt;Two orientations for content and sidebar, default (left sidebar) and &lt;a href=&quot;https://github.com/poole/lanyon#reverse-layout&quot;&gt;reverse&lt;/a&gt; (right sidebar), available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/poole/hyde#themes&quot;&gt;Eight optional color schemes&lt;/a&gt;, available via &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/poole/hyde#readme&quot;&gt;Head to the readme&lt;/a&gt; to learn more.&lt;/p&gt;
-
-&lt;h3&gt;Browser support&lt;/h3&gt;
-
-&lt;p&gt;Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
-
-&lt;h3&gt;Download&lt;/h3&gt;
-
-&lt;p&gt;Hyde is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
-
-&lt;p&gt;Thanks!&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>What's Jekyll?</title>
-   <link href="http://schef.github.io/2014/12/16/whats-jekyll/"/>
-   <updated>2014-12-16T00:00:00+01:00</updated>
-   <id>http://schef.github.io/2014/12/16/whats-jekyll</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project&amp;#39;s readme&lt;/a&gt;:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;#39;s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
-
-&lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  

@@ -5,7 +5,7 @@ title: Masterclass 1
 
 Perfect pitch sounds so long good until you take your pace to practice it. It's always hard to learn something new. It takes time and energy.
 
-I didn't buy the program. I found it on [GrooveShark](http://www.grooveshark.com) website. Here is a little ![image]({{ site.url }}/assets/dlb-pp.jpg) of the supercourse.
+I didn't buy the program. I found it on [GrooveShark's](http://www.grooveshark.com) website.
 
 ###Keywords
 
