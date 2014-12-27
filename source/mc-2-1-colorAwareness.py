@@ -21,16 +21,16 @@ try:
  while True:
   note=random.choice(notes)
   done = False
-  print "Possible commands: (a)gain, (n)ext:"
+  print ("Possible commands: (a)gain, (n)ext:")
   while not done:
-    fout.write(chr(0x90)+chr(note)+chr(127))
+    fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
     fout.flush()
     time.sleep(0.7)
-    fout.write(chr(0x80)+chr(note)+chr(127))
+    fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
     fout.flush()
-    n = raw_input("? ")
+    n = input("? ")
     if n == "n":
-      print "Next"
+      print ("Next")
       done = True
     elif n =="a":
       pass

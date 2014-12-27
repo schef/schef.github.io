@@ -25,26 +25,26 @@ try:
  while True:
   note=random.choice(opcije)
   done = False
-  print "Possible commands: (a)gain, (n)ext:"
+  print ("Possible commands: (a)gain, (n)ext:")
   while not done:
     if note == 66:
-      print "fis-dur"
+      print ("fis-dur")
     elif note == 63:
-      print "es-dur"
-    fout.write(chr(0x90)+chr(note)+chr(127))
-    fout.write(chr(0x90)+chr(note+dur[1])+chr(127))
-    fout.write(chr(0x90)+chr(note+dur[2])+chr(127))
-    fout.write(chr(0x90)+chr(note+dur[3])+chr(127))
+      print ("es-dur")
+    fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
+    fout.write((chr(0x90)+chr(note+dur[1])+chr(127)).encode('utf-8'))
+    fout.write((chr(0x90)+chr(note+dur[2])+chr(127)).encode('utf-8'))
+    fout.write((chr(0x90)+chr(note+dur[3])+chr(127)).encode('utf-8'))
     fout.flush()
     time.sleep(0.7)
-    fout.write(chr(0x80)+chr(note)+chr(127))
-    fout.write(chr(0x80)+chr(note+dur[1])+chr(127))
-    fout.write(chr(0x80)+chr(note+dur[2])+chr(127))
-    fout.write(chr(0x80)+chr(note+dur[3])+chr(127))
+    fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
+    fout.write((chr(0x80)+chr(note+dur[1])+chr(127)).encode('utf-8'))
+    fout.write((chr(0x80)+chr(note+dur[2])+chr(127)).encode('utf-8'))
+    fout.write((chr(0x80)+chr(note+dur[3])+chr(127)).encode('utf-8'))
     fout.flush()
-    n = raw_input("? ")
+    n = input("? ")
     if n == "n":
-      print "Next"
+      print ("Next")
       done = True
     elif n =="a":
       pass
