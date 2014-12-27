@@ -5,9 +5,9 @@ title: Masterclass 5
 
 ### Keywords
 
-**Phase 1** - prep the ear
-**Phase 2** - all the color become clear at the same time.
-**Phase 3** - polish it even more
+* **Phase 1** - prep the ear
+* **Phase 2** - all the color become clear at the same time.
+* **Phase 3** - polish it even more
 
 Were in a big class room.
 The foundation on music is hearing.
@@ -32,7 +32,7 @@ Start up using a medium range of tones on your instrument at first.
 Some of the exercises that were going to do are hearing exercises and some are singing exercises.
 When your doing a hearing exercises you just listen, you don't sing the tone. We don't wanna start judging pitches with our voice. We wanna learn the pitch by hearing.
 
-Were going to divide our exercises into three main categories.
+Were going to divide our exercises into three main categories:
 
 1. solo keyboards
 2. solo guitar
@@ -54,12 +54,11 @@ Progress to the next masterclass when you feel ready. And if by chance you ever 
 
 
 ### Exercise
-
-* Phase 1 - Color hearing exercises:
+###### Phase 1 - Color hearing:
 
 *Solo keyboards*
 
-* reach to your keyboard and play any two white tones that are separated by one white tone like E and G. Were just using the white tones only. Now we listen carefully to sound of these two tones. Listen individually so that you can hear each of the two tones. Usually we may only hear the top tone. So we have to listen little more closely to the bottom tone. Let your ear get inside to hear the bottom tone as well as the top tone. Now to prove that you really are hearing these tones we sing them (from the bottom up). When you can sing the tones then you have proved that you really have heard both tones. You didn't just hear the top one. If you can't hear the bottom tone than play it. Listen to it separately. Then play the two tones together again and see if you can now hear the bottom tone. Just work with your ear like this. Take your time. Work with this drill until you can any two tones separate by one white tone. You don't have to name the pitch. Were just singing the tones.
+Reach to your keyboard and play any two white tones that are separated by one white tone like E and G. Were just using the white tones only. Now we listen carefully to sound of these two tones. Listen individually so that you can hear each of the two tones. Usually we may only hear the top tone. So we have to listen little more closely to the bottom tone. Let your ear get inside to hear the bottom tone as well as the top tone. Now to prove that you really are hearing these tones we sing them (from the bottom up). When you can sing the tones then you have proved that you really have heard both tones. You didn't just hear the top one. If you can't hear the bottom tone than play it. Listen to it separately. Then play the two tones together again and see if you can now hear the bottom tone. Just work with your ear like this. Take your time. Work with this drill until you can any two tones separate by one white tone. You don't have to name the pitch. Were just singing the tones.
 
 ``mc-5-1-sk-thirds.py``
 
