@@ -18,4 +18,5 @@ Different levels:
 ### Exercise
 
 Go to your own instrument and have a listen, here for yourself that this color sounds do exist.
+program_name: masterclass2-colorAwareness.py
 
