@@ -9,7 +9,7 @@ Ear traning occurs when you make the errors and you correct them. Always correct
 
 ### Exercise
 
-Speed recognition of tones.
+**11-09** Speed recognition of tones.
 Take all the tones that you are working with. And you play them quickly like this. BPM210. note4 r4 r2 | note4 r4 r2 | note4 r4 r2 | note4 r4 r2 and your partner names all the tones that his hearing. And you don't slow down. If your partner can not name the tones then he just says. Don't know. And then you go on to the next one. This is a very very good practice. It lets the ear gear up. We wana do it all diferent ways. Long. Sometime short. Sometimes short and fast at a constant speed.
 
 *Solo keyboards*
