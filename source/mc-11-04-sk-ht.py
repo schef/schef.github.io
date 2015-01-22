@@ -20,29 +20,23 @@ fout=open(fname,"wb")
 #keymax=int(72)
 
 #c major scale
-print ("Exercise 9-3:")
-print ("Acending melodic sixes pitch indetification drill. Were not singing the tone. We only identify them.")
+print ("Exercise 10-17:")
+print ("Aural chord analisys. First you have to unlock the sound by ear. And then you have to indentify. It's a very powerful tehnique to stabilize perfect pitch.")
 #from c to c'' white tones
 
 #c major scale
 notes = [ 36, 38, 40, 41, 43, 45, 47, 48, 50, 52, 53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84, 86, 88, 89, 91, 93, 95, 96 ]
-#notes = [ 36, 38, 40, 48, 50, 52, 60, 62, 64, 72, 74, 76, 84, 86, 88, 96 ]
 noteC = [ 36, 48, 60, 72, 84, 96 ]
 
-def playNote(note):
-  fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
-  fout.flush()
-  time.sleep(0.7)
-  fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
-  fout.flush()
-
-def play2Notes(noteOne, noteTwo):
+def playNote(noteOne, noteTwo, noteThree):
   fout.write((chr(0x90)+chr(noteOne)+chr(127)).encode('utf-8'))
   fout.write((chr(0x90)+chr(noteTwo)+chr(127)).encode('utf-8'))
+  fout.write((chr(0x90)+chr(noteThree)+chr(127)).encode('utf-8'))
   fout.flush()
   time.sleep(0.7)
   fout.write((chr(0x80)+chr(noteOne)+chr(127)).encode('utf-8'))
   fout.write((chr(0x80)+chr(noteTwo)+chr(127)).encode('utf-8'))
+  fout.write((chr(0x80)+chr(noteThree)+chr(127)).encode('utf-8'))
   fout.flush()
 
 def nameNote(note):
@@ -64,56 +58,64 @@ def nameNote(note):
 def name2Note(name):
   if name == "c":
     return(60)
-  elif name == "d":
+  if name == "d":
     return(62)
-  elif name == "e":
+  if name == "e":
     return(64)
-  elif name == "f":
+  if name == "f":
     return(65)
-  elif name == "g":
+  if name == "g":
     return(67)
-  elif name == "a":
+  if name == "a":
     return(69)
-  elif name == "h":
+  if name == "h":
     return(71)
 
-usage = "Usage: 1-repeat, <note> <note> \"c d\", ?-usage., hint, err"
+usage = "Usage: 1-repeat, <note> <note> \"c d e\", ?-usage."
 round = 1
-a = re.compile("^[a-h] [a-h]$")
-singleNote = re.compile("^[a-h]$")
+a = re.compile("^[a-h] [a-h] [a-h]$")
 
 try:
   print(usage)
   while True:
-    noteOne = random.choice(notes[:-5])
-    noteTwo = notes[notes.index(noteOne)+5]
-    #while True:
+    while True:
+      noteOne = random.choice(notes[:-2])
+      if noteOne < 60:
+        break
+    print("one: " + str(noteOne))
+    while True:
+      while True:
+        noteTwo = random.choice(notes[:-1])
+        print("two: " + str(noteTwo))
+        if 80 > noteTwo > noteOne and nameNote(noteOne) != nameNote(noteTwo):
+          break
+      while True:
+        noteThree = random.choice(notes)
+        print("three: " + str(noteThree))
+        if noteThree > noteTwo and nameNote(noteOne) != nameNote(noteThree):
+          break
+      if nameNote(noteTwo) != nameNote(noteThree):
+        break
     match = False
     while not match:
       done = False
-      play2Notes(noteOne, noteTwo)
+      playNote(noteOne, noteTwo, noteThree)
       while not done:
         n = input("? ")
         if n == "1":
-          play2Notes(noteOne, noteTwo)
-        elif n == "?":
+          playNote(noteOne, noteTwo, noteThree)
+        if n == "?":
           print(usage)
-        elif n == "hint":
-          print(nameNote(noteOne) + " " + nameNote(noteTwo))
-        elif n == "err":
-          play2Notes(name2Note(errorNoteOne), name2Note(errorNoteTwo))
+        if n == "help":
+          print(nameNote(noteOne).lower(), nameNote(noteTwo).lower(), nameNote(noteThree).lower())
         elif a.match(n):
           splitNote = n.split()
-          if splitNote[0] == nameNote(noteOne).lower() and splitNote[1] == nameNote(noteTwo).lower():
+          if splitNote[0] == nameNote(noteOne).lower() and splitNote[1] == nameNote(noteTwo).lower() and splitNote[2] == nameNote(noteThree).lower():
             round += 1
             print("Correct. Next round. " + str(round) + ".:")
             done = True
             match = True
           else:
-            play2Notes(name2Note(splitNote[0]), name2Note(splitNote[1]))
-            errorNoteOne = splitNote[0]
-            errorNoteTwo = splitNote[1]
-        elif singleNote.match(n):
-          playNote(name2Note(n)) 
+            playNote(name2Note(splitNote[0]), name2Note(splitNote[1]), name2Note(splitNote[2]))
 except KeyboardInterrupt:
   pass

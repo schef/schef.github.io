@@ -20,14 +20,17 @@ fout=open(fname,"wb")
 #keymax=int(72)
 
 #c major scale
-print ("Exercise 9-2:")
-print ("Acending melodic sixes pitch indetification drill. Were not singing the tone. We only identify them.")
+print ("Exercise 10-13:")
+print ("Meditation: C, D, E, F, G and A. When ever we seat to practice we think of a tone and sing it. We need to correct our error.")
 #from c to c'' white tones
 
 #c major scale
-notes = [ 36, 38, 40, 41, 43, 45, 47, 48, 50, 52, 53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84, 86, 88, 89, 91, 93, 95, 96 ]
+#notes = [ 36, 38, 40, 41, 43, 45, 47, 48, 50, 52, 53, 55, 57, 59, 60, 62, 64, 65, 67, 69, 71, 72, 74, 76, 77, 79, 81, 83, 84, 86, 88, 89, 91, 93, 95, 96 ]
 #notes = [ 36, 38, 40, 48, 50, 52, 60, 62, 64, 72, 74, 76, 84, 86, 88, 96 ]
+notes = [60, 62, 64, 65, 67, 69, 71 ]
 noteC = [ 36, 48, 60, 72, 84, 96 ]
+
+i = 0
 
 def playNote(note):
   fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
@@ -68,47 +71,31 @@ def name2Note(name):
   elif name == "h":
     return(71)
 
-usage = "Usage: 1-repeat, <note> <note> \"c d\", ?-usage., hint, err"
+
+usage = "Usage: 1-play, 2-next."
 round = 1
-a = re.compile("^[a-h] [a-h]$")
-singleNote = re.compile("^[a-h]$")
+b = re.compile("^[a-h]$")
 
 try:
   print(usage)
   while True:
-    noteOne = random.choice(notes[5:])
-    noteTwo = notes[notes.index(noteOne)-5]
-    #while True:
+    note = random.choice(notes)
     match = False
     while not match:
+      print (nameNote(note))
       done = False
-      playNote(noteOne)
-      playNote(noteTwo)
       while not done:
         n = input("? ")
-        if n == "1":
-          playNote(noteOne)
-          playNote(noteTwo)
-        elif n == "?":
+        if n == "?":
           print(usage)
-        elif n == "hint":
-          print(nameNote(noteOne) + " " + nameNote(noteTwo))
-        elif n == "err":
-          playNote(name2Note(errorNoteOne))
-          playNote(name2Note(errorNoteTwo))
-        elif a.match(n):
-          splitNote = n.split()
-          if splitNote[0] == nameNote(noteOne).lower() and splitNote[1] == nameNote(noteTwo).lower():
-            round += 1
-            print("Correct. Next round. " + str(round) + ".:")
-            done = True
-            match = True
-          else:
-            playNote(name2Note(splitNote[0]))
-            playNote(name2Note(splitNote[1]))
-            errorNoteOne = splitNote[0]
-            errorNoteTwo = splitNote[1]
-        elif singleNote.match(n):
-          playNote(name2Note(n)) 
+        elif n == "1":
+          playNote(note)
+        elif n == "2":
+          round += 1
+          print("Next round. " + str(round) + ".:")
+          done = True
+          match = True
+        elif b.match(n):
+          playNote(name2Note(n))
 except KeyboardInterrupt:
   pass

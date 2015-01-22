@@ -20,8 +20,8 @@ fout=open(fname,"wb")
 #keymax=int(72)
 
 #c major scale
-print ("Exercise 9-2:")
-print ("Acending melodic sixes pitch indetification drill. Were not singing the tone. We only identify them.")
+print ("Exercise 10-1:")
+print ("Acending melodic seconds pitch indetification drill. Were not singing the tone. We only identify them.")
 #from c to c'' white tones
 
 #c major scale
@@ -76,8 +76,8 @@ singleNote = re.compile("^[a-h]$")
 try:
   print(usage)
   while True:
-    noteOne = random.choice(notes[5:])
-    noteTwo = notes[notes.index(noteOne)-5]
+    noteOne = random.choice(notes[:-1])
+    noteTwo = notes[notes.index(noteOne)+1]
     #while True:
     match = False
     while not match:

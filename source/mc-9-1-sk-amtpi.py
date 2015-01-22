@@ -71,6 +71,7 @@ def name2Note(name):
 usage = "Usage: 1-repeat, <note> <note> \"c d\", ?-usage., hint, err"
 round = 1
 a = re.compile("^[a-h] [a-h]$")
+singleNote = re.compile("^[a-h]$")
 
 try:
   print(usage)
@@ -107,5 +108,7 @@ try:
             playNote(name2Note(splitNote[1]))
             errorNoteOne = splitNote[0]
             errorNoteTwo = splitNote[1]
+        elif singleNote.match(n):
+          playNote(name2Note(n)) 
 except KeyboardInterrupt:
   pass
