@@ -29,6 +29,3 @@ C#, F#, Eb, Ab and Bb.
 ...
 
 *Meditation*
-
-**11-08** All white tones.
-
