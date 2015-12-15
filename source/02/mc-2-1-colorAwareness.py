@@ -15,8 +15,9 @@ keymax=int(72)
 fin=open(fname,"rb")
 fout=open(fname,"wb")
 
+notesOffset = -24
 #c major scale
-notes = [ 60, 62, 64, 65, 67, 69, 71 ]
+notes = [ 60+notesOffset, 62+notesOffset, 64+notesOffset, 65+notesOffset, 67+notesOffset, 69+notesOffset, 71+notesOffset ]
 try:
  while True:
   note=random.choice(notes)
@@ -25,7 +26,7 @@ try:
   while not done:
     fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
     fout.flush()
-    time.sleep(0.7)
+    time.sleep(1.5)
     fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
     fout.flush()
     n = input("? ")

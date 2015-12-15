@@ -66,8 +66,9 @@ def name2Num(name):
   elif name == "h":
     return(71)
 
-fname="/dev/snd/midiC1D0"
-#fname="/dev/snd/midiC2D0"
+#fname="/dev/snd/midiC1D0"
+#fname="/dev/snd/midiC0D0"
+fname="/dev/snd/midiC3D0"
 #fname="/dev/snd/midiC3D0"
 fin=open(fname,"rb")
 fout=open(fname,"wb")
@@ -85,7 +86,7 @@ def playTwoNotes(noteOne, noteTwo):
   fout.write((chr(0x90)+chr(noteOne)+chr(100)).encode('utf-8'))
   fout.write((chr(0x90)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.flush()
-  time.sleep(0.7)
+  time.sleep(2.0)
   fout.write((chr(0x80)+chr(noteOne)+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.flush()
@@ -95,7 +96,7 @@ def playThreeNotes(noteOne, noteTwo, noteThree):
   fout.write((chr(0x90)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.write((chr(0x90)+chr(noteThree)+chr(100)).encode('utf-8'))
   fout.flush()
-  time.sleep(0.7)
+  time.sleep(2.0)
   fout.write((chr(0x80)+chr(noteOne)+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(noteThree)+chr(100)).encode('utf-8'))
@@ -107,14 +108,14 @@ def playFourNotes(notes):
   fout.write((chr(0x90)+chr(notes[2])+chr(100)).encode('utf-8'))
   fout.write((chr(0x90)+chr(notes[3])+chr(100)).encode('utf-8'))
   fout.flush()
-  time.sleep(0.7)
+  time.sleep(2.0)
   fout.write((chr(0x80)+chr(notes[0])+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(notes[1])+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(notes[2])+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(notes[3])+chr(100)).encode('utf-8'))
   fout.flush()
 
-whiteNotes = [ 36, 38, 40, 41, 43, 45, 47, #0-7 c-h
+whiteNotes = [ 36, 38, 40, 41, 43, 45, 47, #2.0 c-h
                48, 50, 52, 53, 55, 57, 59, #7-14
                60, 62, 64, 65, 67, 69, 71, #14-21
                72, 74, 76, 77, 79, 81, 83, #21-28

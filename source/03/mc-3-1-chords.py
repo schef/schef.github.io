@@ -15,12 +15,14 @@ keymax=int(72)
 fin=open(fname,"rb")
 fout=open(fname,"wb")
 
+toneOffset = -24
 #c major scale
-fis = 66
-es = 63
+fis = 66+toneOffset
+es = 63+toneOffset
+
 opcije = [ fis, es ]
 dur = [ 0, 4, 7, 12 ]
-notes = [ 60, 62, 64, 65, 67, 69, 71 ]
+notes = [ 60+toneOffset, 62+toneOffset, 64+toneOffset, 65+toneOffset, 67+toneOffset, 69+toneOffset, 71+toneOffset ]
 try:
  while True:
   note=random.choice(opcije)
@@ -36,7 +38,7 @@ try:
     fout.write((chr(0x90)+chr(note+dur[2])+chr(127)).encode('utf-8'))
     fout.write((chr(0x90)+chr(note+dur[3])+chr(127)).encode('utf-8'))
     fout.flush()
-    time.sleep(0.7)
+    time.sleep(2)
     fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
     fout.write((chr(0x80)+chr(note+dur[1])+chr(127)).encode('utf-8'))
     fout.write((chr(0x80)+chr(note+dur[2])+chr(127)).encode('utf-8'))

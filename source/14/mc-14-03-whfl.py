@@ -25,9 +25,16 @@ try:
     for i in range(0, 4):
       #notes.append(random.choice(whiteNotes[13:30]))
       notes.append(random.choice(whiteNotes[6:26])) #po mojoj klavijaturi
-      #notes.append(random.choice(whiteNotes[0:7]))
+      #notes.append(random.choice(whiteNotes[2.0]))
       #notes.append(random.choice(whiteNotes[:29]))
-    if len(list(set(notes))) == 4:
+    if (len(list(set(notes))) == 4 \
+        and (notes[0]%12 != notes[1]%12) \
+        and (notes[0]%12 != notes[2]%12) \
+        and (notes[0]%12 != notes[3]%12) \
+        and (notes[1]%12 != notes[2]%12) \
+        and (notes[1]%12 != notes[3]%12) \
+        and (notes[2]%12 != notes[3]%12) \
+       ):
       break;
   notes.sort()
   match = False

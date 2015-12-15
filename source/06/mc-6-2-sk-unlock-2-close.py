@@ -35,12 +35,12 @@ try:
       match = True
   done = False
   print ("Possible commands: (a)gain, (n)ext, (l)ower, (u)pper:")
-  fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
-  fout.write((chr(0x90)+chr(noteTwo)+chr(127)).encode('utf-8'))
+  fout.write((chr(0x90)+chr(note)+chr(120)).encode('utf-8'))
+  fout.write((chr(0x90)+chr(noteTwo)+chr(120)).encode('utf-8'))
   fout.flush()
-  time.sleep(0.7)
-  fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
-  fout.write((chr(0x80)+chr(noteTwo)+chr(127)).encode('utf-8'))
+  time.sleep(2.0)
+  fout.write((chr(0x80)+chr(note)+chr(120)).encode('utf-8'))
+  fout.write((chr(0x80)+chr(noteTwo)+chr(120)).encode('utf-8'))
   fout.flush()
   while not done:
     n = input("? ")
@@ -50,24 +50,24 @@ try:
       print (str(i) + ". round.")
       done = True
     elif n =="a":
-      fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
-      fout.write((chr(0x90)+chr(noteTwo)+chr(127)).encode('utf-8'))
+      fout.write((chr(0x90)+chr(note)+chr(120)).encode('utf-8'))
+      fout.write((chr(0x90)+chr(noteTwo)+chr(120)).encode('utf-8'))
       fout.flush()
-      time.sleep(0.7)
-      fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
-      fout.write((chr(0x80)+chr(noteTwo)+chr(127)).encode('utf-8'))
+      time.sleep(2.0)
+      fout.write((chr(0x80)+chr(note)+chr(120)).encode('utf-8'))
+      fout.write((chr(0x80)+chr(noteTwo)+chr(120)).encode('utf-8'))
       fout.flush()
     elif n =="l":
-      fout.write((chr(0x90)+chr(note)+chr(127)).encode('utf-8'))
+      fout.write((chr(0x90)+chr(note)+chr(120)).encode('utf-8'))
       fout.flush()
-      time.sleep(0.7)
-      fout.write((chr(0x80)+chr(note)+chr(127)).encode('utf-8'))
+      time.sleep(2.0)
+      fout.write((chr(0x80)+chr(note)+chr(120)).encode('utf-8'))
       fout.flush()
     elif n =="u":
-      fout.write((chr(0x90)+chr(noteTwo)+chr(127)).encode('utf-8'))
+      fout.write((chr(0x90)+chr(noteTwo)+chr(120)).encode('utf-8'))
       fout.flush()
-      time.sleep(0.7)
-      fout.write((chr(0x80)+chr(noteTwo)+chr(127)).encode('utf-8'))
+      time.sleep(2.0)
+      fout.write((chr(0x80)+chr(noteTwo)+chr(120)).encode('utf-8'))
       fout.flush()
 except KeyboardInterrupt:
   pass

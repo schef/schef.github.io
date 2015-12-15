@@ -15,6 +15,7 @@ print ("4 White tones, 1 tone. 30 Rounds.")
 
 i = 0
 noteCount = 0
+correct = 0
 
 try:
  while True:
@@ -58,11 +59,13 @@ try:
         match = True
         print("Correct.")
         i += 1
-        print (str(i) + ". round.")
+        correct +=1
+        print (str(i) + ". round. " + str(correct) + " correct.")
       else:
         print ("Error.")
         noteError = name2Num(n)
         playNote(noteError)
+        correct = 0
     elif re.compile("^t [a-z]+$").match(n):
       splitNote = n.split()
       playNote(name2Num(splitNote[1]))

@@ -23,8 +23,18 @@ try:
     notes = []
     for i in range(0, 4):
       notes.append(random.choice(whiteNotes[7:28]))
-    if len(list(set(notes))) == 4:
+#    if len(list(set(notes))) == 4:
+#      break;
+    if (len(list(set(notes))) == 4 \
+        and (notes[0]%12 != notes[1]%12) \
+        and (notes[0]%12 != notes[2]%12) \
+        and (notes[0]%12 != notes[3]%12) \
+        and (notes[1]%12 != notes[2]%12) \
+        and (notes[1]%12 != notes[3]%12) \
+        and (notes[2]%12 != notes[3]%12) \
+       ):
       break;
+
   #notes.sort()
   match = False
   noteError = None
