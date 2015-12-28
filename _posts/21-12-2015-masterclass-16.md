@@ -19,33 +19,57 @@ Hear what you can hear and be happy about it.
 ### Exercise
 
 *Solo keyboars*
+
 White major chords
+
 **16-01** Any white major chord and than a black tone. OVR.
+
 **16-01-01** A C major chord and than a black tone. OVR.
+
 **16-01-02** A D major chord and than a black tone. OVR.
+
 **16-01-03** A E major chord and than a black tone. OVR.
+
 **16-01-04** A F major chord and than a black tone. OVR.
+
 **16-01-05** A G major chord and than a black tone. OVR.
+
 **16-01-06** A A major chord and than a black tone. OVR.
+
 **16-01-07** A H major chord and than a black tone. OVR.
+
 Black major chords
+
 **16-02** Any black major chord and than a white tone. OVR.
+
 **16-02-01** A C# major chord and than a white tone. OVR.
+
 **16-02-02** A Eb major chord and than a white tone. OVR.
+
 **16-02-03** A F# major chord and than a white tone. OVR.
+
 **16-02-04** A Ab major chord and than a white tone. OVR.
+
 **16-02-05** A Bb major chord and than a white tone. OVR.
 
 *Solo guitar*
+
 ...
 
 *Meditation*
+
 **16-03** C major with As but doubles.
 
 *Team players*
+
 **16-04-01** Single tone: H-D-F-As in first octave.
+
 **16-04-02** Double melodic tones: H-D-F-As in first octave.
+
 **16-04-03** Triple melodic tones: H-D-F-As in first octave.
+
 **16-04-04** Harmonic doubles tones: H-D-F-As in first octave.
+
 **16-04-05** Harmonic triples tones: H-D-F-As in first octave.
+
 Then do the same on second octave.
