@@ -22,8 +22,6 @@ Hear what you can hear and be happy about it.
 
 White major chords
 
-**16-01** Any white major chord and than a black tone. OVR.
-
 **16-01-01** A C major chord and than a black tone. OVR.
 
 **16-01-02** A D major chord and than a black tone. OVR.
@@ -38,9 +36,9 @@ White major chords
 
 **16-01-07** A H major chord and than a black tone. OVR.
 
-Black major chords
+**16-01** Any white major chord and than a black tone. OVR.
 
-**16-02** Any black major chord and than a white tone. OVR.
+Black major chords
 
 **16-02-01** A C# major chord and than a white tone. OVR.
 
@@ -51,6 +49,8 @@ Black major chords
 **16-02-04** A Ab major chord and than a white tone. OVR.
 
 **16-02-05** A Bb major chord and than a white tone. OVR.
+
+**16-02** Any black major chord and than a white tone. OVR.
 
 *Solo guitar*
 

@@ -12,14 +12,11 @@ import re
 sys.path.append("/home/schef/github/schef.github.io/source/")
 from pptraning import *
 
-print ("Exercise 12-02:")
-print ("Black melodic doubles OVR.")
-#from c to c'' white tones
+print ("Exercise 14-01:")
+print ("C major chord. We play the chord and then play any black tone and name it. OVR.")
 
-usage = "Usage: 1-repeat, <note> <note> \"c d\", ?-usage."
+usage = "Usage: 1-repeat, <note> \"d\", ?-usage."
 round = 1
-
-
 
 try:
   print(usage)
@@ -47,6 +44,7 @@ try:
             match = True
           else:
             playNote(name2Num(n))
+            round = 1
         elif regSharp.match(n) or regFlat.match(n):
           playNote(name2Num(n))
         elif n == "help":

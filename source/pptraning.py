@@ -67,8 +67,8 @@ def name2Num(name):
     return(71)
 
 #fname="/dev/snd/midiC1D0"
-#fname="/dev/snd/midiC0D0"
-fname="/dev/snd/midiC3D0"
+fname="/dev/snd/midiC2D0"
+#fname="/dev/snd/midiC3D0"
 #fname="/dev/snd/midiC3D0"
 fin=open(fname,"rb")
 fout=open(fname,"wb")
@@ -86,7 +86,7 @@ def playTwoNotes(noteOne, noteTwo):
   fout.write((chr(0x90)+chr(noteOne)+chr(100)).encode('utf-8'))
   fout.write((chr(0x90)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.flush()
-  time.sleep(2.0)
+  time.sleep(0.7)
   fout.write((chr(0x80)+chr(noteOne)+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.flush()
@@ -96,7 +96,7 @@ def playThreeNotes(noteOne, noteTwo, noteThree):
   fout.write((chr(0x90)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.write((chr(0x90)+chr(noteThree)+chr(100)).encode('utf-8'))
   fout.flush()
-  time.sleep(2.0)
+  time.sleep(0.7)
   fout.write((chr(0x80)+chr(noteOne)+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(noteTwo)+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(noteThree)+chr(100)).encode('utf-8'))
@@ -108,25 +108,28 @@ def playFourNotes(notes):
   fout.write((chr(0x90)+chr(notes[2])+chr(100)).encode('utf-8'))
   fout.write((chr(0x90)+chr(notes[3])+chr(100)).encode('utf-8'))
   fout.flush()
-  time.sleep(2.0)
+  time.sleep(2)
   fout.write((chr(0x80)+chr(notes[0])+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(notes[1])+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(notes[2])+chr(100)).encode('utf-8'))
   fout.write((chr(0x80)+chr(notes[3])+chr(100)).encode('utf-8'))
   fout.flush()
 
-whiteNotes = [ 36, 38, 40, 41, 43, 45, 47, #2.0 c-h
+whiteNotes = [ #36, 38, 40, 41, 43, 45, 47, #2.0 c-h
+               47,
                48, 50, 52, 53, 55, 57, 59, #7-14
                60, 62, 64, 65, 67, 69, 71, #14-21
                72, 74, 76, 77, 79, 81, 83, #21-28
-               84, 86, 88, 89, 91, 93, 95, #28-35
-               96 ]                        #35-36
+#               84, 86, 88, 89, 91, 93, 95, #28-35
+#               96 ]                        #35-36
+             ]
 
-blackNotes = [ 37, 39, 42, 44, 46, #cis-b
+blackNotes = [ #37, 39, 42, 44, 46, #cis-b
                49, 51, 54, 56, 58,
                61, 63, 66, 68, 70,
                73, 75, 78, 80, 82,
-               85, 87, 90, 92, 94]
+#               85, 87, 90, 92, 94]
+             ]
 
 regWhite = re.compile("^[a-h]$")
 regSharp = re.compile("^[a-h]is$")
